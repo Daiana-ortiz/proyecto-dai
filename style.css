@@ -6,6 +6,8 @@
     font-family: 'Catamaran', sans-serif;
 }
 
+/* navbar styling  */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -36,11 +38,70 @@
     color: #00aeef ;
 }
 
-.servicios{
+/* sobre mi styling */
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
     width: 100%;
     height: 600px;
     background-color: #EC008C;
+    
+
 }
+
+.container .info-container{
+    width: 50%;
+    padding: 60px;
+    font-size: 30px;
+    color: white;
+}
+
+.container .info-container .titulo{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.container .info-container .texto{
+    letter-spacing: 2px;
+    margin: 25px 0;
+}
+
+.container .info-container .btn{
+    display: block;
+    width: 200px;
+    border: 3px solid white;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.container .info-container .btn a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.container .info-container .btn:hover{
+    background-color: white; 
+    transition: 0.3s all ease;  
+}
+
+.container .info-container .btn a:hover{
+    color: #EC008C;   
+}
+
+.container .img {
+    width: 50%;
+    height: 600px;
+    background-image: url(/profile.jpg);
+    background-position:inherit;
+    background-size: auto;
+}
+
 
 
 
@@ -51,7 +112,7 @@
         display: block;
         justify-content: center;
         width: 100%;
-        height: 20%;
+        height: 300px;
     }
 
     .navbar .logo {
@@ -84,5 +145,41 @@
         color: #fff;
         cursor: pointer;
     }
+
+    
+.container{
+    display: block;
+    width: 100%;
+    height: 600px;
+    background-color: #EC008C;
+}
+
+
+.container .info-container{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    padding: 20px 0;
+
+}
+
+.container .info-container .btn{
+    display: block;
+    border: 3px solid white;
+    margin-top: 25px;
+    width: 100%
+}
+
+.container .img {
+    width: 100%;
+    height: 400px;
+    background-image: url(/profile.jpg);
+    background-position:top;
+    background-size: cover;
+
+}
+
 }
 
