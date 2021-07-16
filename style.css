@@ -120,7 +120,7 @@ body{
     text-align: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     margin-top: 100px;
 }
 
@@ -203,6 +203,7 @@ body{
     width: 100%;
     height: 100vh;
     text-align: center;
+    margin-top: 170px;
 }
 
 .services .container-services h2{
@@ -214,7 +215,8 @@ body{
 .services .container-services .serv-content{
     display: flex;
     justify-content: space-around;
-    margin-top: 120px;
+    margin-top: 90px;
+    
 }
 
 .services .serv-content .card{
@@ -258,6 +260,71 @@ body{
 }
 
 /* projects styling */
+
+.projects{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.projects .container3 {
+    width: 100%;
+    height: 100vh;
+}
+
+.projects .container3 .title-projects {
+    margin: 10px 0 30px 0;
+    font-size: 25px;
+    height: 80px;
+    color: white;
+}
+
+.projects .container3 .pro-content{
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.projects .container3 .pro-content .box{
+    margin-bottom: 5px;
+    position: relative;
+
+}
+
+.projects .container3 .pro-content .box img{
+    width: 70%;
+    height: 280px;
+}
+
+.projects .container3 .pro-content .box .img{
+    justify-content: center;
+    width: 70%;
+}
+
+.projects .container3 .pro-content .box .image-overlay{
+    position: absolute;
+    top: 0;
+    left: 114px;
+    width: 70%;
+    height: 97%;
+    background: rgba(0,0,0,0.6) ;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.projects .container3 .pro-content .box .image-overlay .image-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.projects .container3 .pro-content .box .image-overlay:hover{
+    opacity: 1;
+}
+
 
 
 /* responsive styling  */
