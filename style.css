@@ -316,13 +316,29 @@ body{
     opacity: 0;
 }
 
-.projects .container3 .pro-content .box .image-overlay .image-title{
-    font-size: 30px;
+.projects .container3 .pro-content .box .image-overlay .bold-title{
     font-weight: bold;
+    font-size: 30px;
+    color: #EC008C;
 }
 
+.projects .container3 .pro-content .box .image-overlay .image-title{
+    font-size: 20px;
+}
+
+.projects .container3 .pro-content .box .image-overlay a{
+    color: #00aeef;
+    text-decoration: none;
+    
+}
 .projects .container3 .pro-content .box .image-overlay:hover{
     opacity: 1;
+}
+
+.projects .container3 .pro-content .box .image-overlay a:hover{
+    
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 
 
@@ -348,7 +364,6 @@ body{
     font-weight: bold;
     width: calc(40% - 50px);
     height: 400px;
-    color: ;
 }
 
 .contact .contact-content .left p{
@@ -634,7 +649,44 @@ footer span a:hover{
 .projects .container3 .pro-content .box .image-overlay {
     left: 4px;
     width: 100%;
-    
 
+}
+
+.contact .contact-content{
+    margin-top: 500px;
+    display: block;
+    height: 100vh;
+}
+
+.contact .contact-content .column {
+    width: 95%;
+    height: 340px;
+    margin-left: 0px;
+}
+
+.contact .contact-content .left {
+    align-items: center;
+}
+.contact .contact-content .left p {
+    text-align: center;
+}
+
+.contact .contact-content .left .icons {
+    margin: 10px 50px;
+}
+
+.contact .contact-content .right {
+    margin-left: 7px;
+    width: 90%;
+}
+
+.contact .contact-content .right .text{
+    text-align: center;
+}
+
+.contact .right form .button {
+    height: 47px;
+    width: 90%;
+    margin-left: 40px;
 
 }
