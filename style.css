@@ -1,17 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+
 
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Catamaran', sans-serif;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+    font-family: 'Catamaran' , sans-serif;
+    box-sizing: none;
 }
 
 body{
-    background-image: url(/fondo.jpg);
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin: 0;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 
 /* navbar styling  */
 
@@ -24,8 +33,21 @@ body{
     background-color: #fff;
 }
 
-.navbar .logo img{
+.navbar .logo{
     height: 250px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 40%;
+}
+
+.navbar .logo h2{
+    text-align: center;
+    color: #EC008C;
+    font-size: 45px;
+    letter-spacing: 3px;
+    font-family: 'Lily Script One', cursive;
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 1);
 }
 
 .navbar .links{
@@ -57,7 +79,11 @@ body{
     align-items: center;
     margin: auto;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
+    background-image: url(/back.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container .info-container{
@@ -71,12 +97,12 @@ body{
 
 .container .info-container .titulo{
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
 }
 
 .container .info-container .texto{
     letter-spacing: 2px;
-    margin: 25px 0;
+    margin: 20px 0;
     color: #00aeef;
 }
 
@@ -105,12 +131,31 @@ body{
 
 .container .img {
     width: 50%;
-    height: 90vh;
-    background-image: url(/profile.jpg);
-    background-position:cover;
+    height: 500px;
+    background: url(/profile.jpg);
     background-size: cover;
-    border-radius: 50%;
+    animation: animate 5s linear infinite;
     
+}
+
+@keyframes animate{
+    0%,100%
+    {
+        border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+    }
+    25%
+    {
+        border-radius: 73% 27% 26% 38% / 73% 36% 64% 27%;
+    }
+    50%
+    {
+        border-radius: 28% 72% 44% 56% / 49% 40% 60% 51%;
+    }
+    75%
+    {
+        border-radius: 40% 60% 70% 30% / 67% 62% 38% 53%;
+    }
+
 }
 
 /* mas informacion styling */
@@ -120,45 +165,30 @@ body{
     text-align: center;
     align-items: center;
     width: 100%;
-    height: 85vh;
-    margin-top: 100px;
+    height: 100vh;
+    margin-top: 15px;
+    background-image: url(/back2.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .informacion .titulo2{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 60px;
-    font-size: 40px;
+    padding: 40px 0px;
+    font-size: 30px;
     color: white; 
 
   }  
 
-  .typing {
-    width: 24ch;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
 
 .informacion .container-two{
     display: inline-block;
     background-color: white;
     width: 70%;
-    padding: 80px;
+    padding: 25px;
     box-shadow: 10px 10px 5px 0px rgba(66,65,65,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(66,65,65,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(66,65,65,0.75);
@@ -195,7 +225,6 @@ body{
 }
 
 
-/* services styling */
 
 /* services section styling  */
 
@@ -203,19 +232,23 @@ body{
     width: 100%;
     height: 100vh;
     text-align: center;
-    margin-top: 170px;
+    margin-top: 10px;
+    background-image: url(/back.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .services .container-services h2{
     font-size: 40px;
     color: white;
-    margin-top: 0px;
+    padding: 40px 0px;
 }
 
 .services .container-services .serv-content{
     display: flex;
     justify-content: space-around;
-    margin-top: 90px;
+    
     
 }
 
@@ -260,96 +293,111 @@ body{
 }
 
 /* projects styling */
-
 .projects{
+    margin-top: 10px;
+}
+
+.projects .container3{
     width: 100%;
     height: 100vh;
-    text-align: center;
-}
-
-.projects .container3 {
-    width: 100%;
-    height: 100vh;
-}
-
-.projects .container3 .title-projects {
-    margin: 10px 0 30px 0;
-    font-size: 25px;
-    height: 80px;
-    color: white;
-}
-
-.projects .container3 .pro-content{
-    display: flex;
-    margin-bottom: 20px;
-
-}
-
-.projects .container3 .pro-content .box{
-    margin-bottom: 5px;
-    position: relative;
-
-}
-
-.projects .container3 .pro-content .box img{
-    width: 70%;
-    height: 280px;
-}
-
-.projects .container3 .pro-content .box .img{
-    justify-content: center;
-    width: 70%;
-}
-
-.projects .container3 .pro-content .box .image-overlay{
-    position: absolute;
-    top: 0;
-    left: 114px;
-    width: 70%;
-    height: 97%;
-    background: rgba(0,0,0,0.6) ;
-    color: #fff;
-    display: flex;
     align-items: center;
+    background-image: url(/back2.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.projects .container3 .title-projects h2{
+    color: white;
+    font-size: 40px;
     text-align: center;
-    justify-content: center;
-    opacity: 0;
+    padding: 20px;
 }
 
-.projects .container3 .pro-content .box .image-overlay .bold-title{
-    font-weight: bold;
-    font-size: 30px;
-    color: #EC008C;
+
+.carousel {
+    overflow: hidden;
+    max-width: 950px;
+    position: relative;
+    height: 500px;
+    margin: 0 auto;
 }
 
-.projects .container3 .pro-content .box .image-overlay .image-title{
-    font-size: 20px;
+.carousel .carousel-item,
+.carousel .carousel-item-hidden{
+    display: none;
 }
 
-.projects .container3 .pro-content .box .image-overlay a{
-    color: #00aeef;
-    text-decoration: none;
-    
-}
-.projects .container3 .pro-content .box .image-overlay:hover{
-    opacity: 1;
+.carousel .carousel-item img{
+    width: 100%;
+   max-width: 950px;
+   height: 500px;
 }
 
-.projects .container3 .pro-content .box .image-overlay a:hover{
-    
-    text-decoration: underline;
-    text-transform: uppercase;
+.carousel .carousel-item-visible{
+    display: block;
+    animation: fadeVisibility 0.5s;
 }
 
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
+
+.carousel .carousel-actions{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel-actions button{
+  border-radius: 50px;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  font-size: 1.5rem;
+}
+
+.carousel .carousel-actions button{
+    margin: 0 20px;
+}
+
+.carousel .carousel-actions button#carousel-button-prev{
+    margin-left: 20px;
+}
+.carousel .carousel-actions button#carousel-button-next{
+  margin-right: 20px;
+}
 
 /* contact section styling */
+
+.contact{
+    margin-top: 10px;
+    background-image: url(/back.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .contact .contact-content{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
     color: #fff;
+    
     
    
 }
@@ -357,7 +405,7 @@ body{
     font-size: 40px;
     text-align: center;
     color: #fff;
-    margin-top: 50px;
+    padding: 40px 0px;
 }
 .contact .contact-content .column{
     font-size: 35px;
@@ -492,6 +540,12 @@ footer span a:hover{
 /* responsive styling  */
 
 @media (max-width: 450px){
+
+    body{
+        display: block;
+        margin: 0;
+    }
+
     .navbar {
         display: block;
         justify-content: center;
@@ -568,7 +622,7 @@ footer span a:hover{
 }
 
 .container .img {
-    width: 100%;
+    width: 90%;
     border-radius: 0;
     background-image: url(/profile.jpg);
     background-position:top;
@@ -596,7 +650,9 @@ footer span a:hover{
     width: 75%;
     padding: 20px;
     margin-top: 40px;
-
+    box-shadow: none;
+    -webkit-box-shadow: none ;
+    -moz-box-shadow: none;
 }
 
 .informacion .link{
@@ -689,4 +745,5 @@ footer span a:hover{
     width: 90%;
     margin-left: 40px;
 
+}
 }
